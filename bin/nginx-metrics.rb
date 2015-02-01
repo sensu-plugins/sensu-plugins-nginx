@@ -89,7 +89,7 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
           connection.request(request)
         end
       end
-    end # until
+    end
 
     # #YELLOW
     response.body.split(/\r?\n/).each do |line|  # rubocop:disable Style/Next
