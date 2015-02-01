@@ -8,19 +8,11 @@
 ## Functionality
 
 ### nginx-metrics
-<<<<<<< HEAD
-Fetch the nginx status page and convert the response into graphit metrics
-
+Fetch the nginx status page and convert the response into graphite metrics
 
 ## Files
  * bin/nginx-metrics.rb
-=======
 Get the nginx metrics from the status page url for use with Graphite
-
-
-## Files
- * bin/nginx-metrics
->>>>>>> updated to 0.0.1-alpha.2
 
 ## Installation
 
