@@ -7,7 +7,8 @@
 
 ## Functionality
 
-### nginx-metrics
+**nginx-metrics**
+
 Fetch the nginx status page and convert the response into graphite metrics
 
 ## Files
