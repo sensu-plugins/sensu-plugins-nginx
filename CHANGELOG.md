@@ -13,3 +13,7 @@
 * update README
 * add required Ruby version *>= 1.9.3*
 * add test/spec_help.rb
+
+#### 0.0.1
+
+* edit readme

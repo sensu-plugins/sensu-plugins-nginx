@@ -4,6 +4,7 @@
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-nginx.svg)](http://badge.fury.io/rb/sensu-plugins-nginx)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-nginx/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-nginx)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-nginx/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-nginx)
+[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-nginx.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-nginx)
 
 ## Functionality
 
@@ -15,20 +16,43 @@ Fetch the nginx status page and convert the response into graphite metrics
  * bin/nginx-metrics.rb
 Get the nginx metrics from the status page url for use with Graphite
 
-## Installation
+## Usage
 
+## Installation
 
 Add the public key (if you haven’t already) as a trusted certificate
 
 ```
 gem cert --add <(curl -Ls https://raw.githubusercontent.com/sensu-plugins/sensu-plugins.github.io/master/certs/sensu-plugins.pem)
-gem install <gem> -P MediumSecurity
+gem install sensu-plugins-nginx -P MediumSecurity
 ```
 
 You can also download the key from /certs/ within each repository.
 
+#### Rubygems
+
 `gem install sensu-plugins-nginx`
 
-Add *sensu-plugins-nginx* to your Gemfile, manifest, cookbook, etc
+#### Bundler
+
+Add *sensu-plugins-nginx* to your Gemfile and run `bundle install` or `bundle update`
+
+#### Chef
+
+Using the Sensu **sensu_gem** LWRP
+```
+sensu_gem 'sensu-plugins-nginx' do
+  options('--prerelease')
+  version '0.0.1.alpha.1'
+end
+```
+
+Using the Chef **gem_package** resource
+```
+gem_package 'sensu-plugins-nginx' do
+  options('--prerelease')
+  version '0.0.1.alpha.1'
+end
+```
 
 ## Notes
