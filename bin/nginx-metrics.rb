@@ -64,7 +64,7 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
 
   # Main function
   #
-  def run
+  def run # rubocop:disable all
     found = false
     attempts = 0
     until found || attempts >= 10
