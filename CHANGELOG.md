@@ -17,3 +17,9 @@
 #### 0.0.1
 
 * edit readme
+
+#### 0.0.2
+
+* add chef provisioner to Vagrantfile
+* add gem metadata
+* fix rubocop issues
