@@ -14,11 +14,11 @@ Gem::Specification.new do |s|
   s.authors                = ['Yieldbot, Inc. and contributors']
   s.cert_chain             = ['certs/sensu-plugins.pem']
   s.date                   = Date.today.to_s
-  s.description            = 'Sensu plugins for workign with the ngnix proxy server'
+  s.description            = 'Sensu plugins for workign with the nginx proxy server'
   s.email                  = '<sensu-users@googlegroups.com>'
   s.executables            = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
-  s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-ngnix'
+  s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-nginx'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => '',
                                'development_status' => 'active',
@@ -29,9 +29,9 @@ Gem::Specification.new do |s|
   s.require_paths          = ['lib']
   s.required_ruby_version  = '>= 1.9.3'
   s.signing_key            = File.expand_path(pvt_key) if $PROGRAM_NAME =~ /gem\z/
-  s.summary                = 'Sensu plugins for workign with the ngnix proxy server'
+  s.summary                = 'Sensu plugins for workign with the nginx proxy server'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
-  s.version                = SensuPluginsNgnix::VERSION
+  s.version                = SensuPluginsNginx::VERSION
 
   s.add_runtime_dependency 'sensu-plugin',      '1.1.0'
 
