@@ -1,25 +1,6 @@
-#### 0.1.0-alpha.1
+#Change Log
+This project adheres to [Semantic Versioning](http://semver.org/).
 
-* baseline release identical to **sensu-community-plugins** repo
-* basic yard coverage
-* pinned dependencies
-* built against 1.9.3, 2.0, 2.1
-* cryptographically signed
+This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
-#### 0.0.1-alpha.2
-
-* bump Vagrant to Chef 6.6
-* update LICENSE and gemspec authors
-* update README
-* add required Ruby version *>= 1.9.3*
-* add test/spec_help.rb
-
-#### 0.0.1
-
-* edit readme
-
-#### 0.0.2
-
-* add chef provisioner to Vagrantfile
-* add gem metadata
-* fix rubocop issues
+## Unreleased][unreleased]

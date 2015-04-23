@@ -1,7 +1,15 @@
+
+require 'sensu-plugins-nginx/version'
+
+# Load the defaults
+
 #
-# Set gem version
+# Default class
 #
 module SensuPluginsNginx
-  # Gem version
-  VERSION = '0.0.1'
+  class << self
+  end
+
+  class << self
+  end
 end
