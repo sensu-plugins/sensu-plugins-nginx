@@ -3,21 +3,20 @@
 
 VAGRANTFILE_API_VERSION = '2'
 
-cent_script = <<EOF
-sudo yum update -y
-sudo yum groupinstall -y development
-sudo yum install -y vim nano
-gpg2 --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
-curl -L get.rvm.io | bash -s stable
-source /home/vagrant/.rvm/scripts/rvm
-rvm reload
-rvm install 2.1.4
-rvm use 2.1.4@sensu_plugins --create
-rvm use 2.1.4@sensu_plugins --default
-EOF
+# cent_script = <<EOF
+# sudo yum update -y
+# sudo yum groupinstall -y development
+# sudo yum install -y vim nano
+# gpg2 --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+# curl -L get.rvm.io | bash -s stable
+# source /home/vagrant/.rvm/scripts/rvm
+# rvm reload
+# rvm install 2.1.4
+# rvm use 2.1.4@sensu_plugins --create
+# rvm use 2.1.4@sensu_plugins --default
+# EOF
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-
   config.vm.define 'cent5' do |cent5|
     cent5.vm.box = 'chef/centos-5.11'
     cent5.vm.provision 'shell', inline: script, privileged: false
@@ -38,7 +37,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # ubuntu14.vm.provision 'shell', inline: script, privileged: false
   end
 
-  config.vm.define 'ubuntu12' do |ubuntu14|
+  config.vm.define 'ubuntu12' do |_ubuntu14|
     ubuntu12.vm.box = 'chef/ubuntu-12.04'
     # ubuntu12.vm.provision 'shell', inline: script, privileged: false
   end
