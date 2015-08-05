@@ -6,6 +6,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## Unreleased
 -nothing
 
+## [0.0.6] - 2015-08-04
+### Changed
+- add gem description
 
 ## [0.0.5] - 2015-07-15
 - bump version due to wrong file name, no code changes
