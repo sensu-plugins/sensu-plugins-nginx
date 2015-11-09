@@ -58,6 +58,10 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
          description: 'Path to your stub status module',
          default: 'nginx_status'
 
+  option :hostheader,
+	 long: '--hostheader HOSTHEADER',
+	 description: 'Set the Host header to this string'
+
   option :scheme,
          description: 'Metric naming scheme, text to prepend to metric',
          short: '-s SCHEME',
@@ -79,6 +83,9 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
           http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         end
         request = Net::HTTP::Get.new(uri.request_uri)
+	if config[:hostheader]
+	  request['Host'] = config[:hostheader]
+	end
         response = http.request(request)
         if response.code == '200'
           found = true
