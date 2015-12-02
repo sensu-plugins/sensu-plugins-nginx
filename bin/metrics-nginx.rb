@@ -42,7 +42,8 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
   option :hostname,
          short: '-h HOSTNAME',
          long: '--host HOSTNAME',
-         description: 'Nginx hostname'
+         description: 'Nginx hostname',
+         default: 'localhost'
 
   option :port,
          short: '-P PORT',
