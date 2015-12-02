@@ -6,6 +6,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## Unreleased
 ### Added
 - metrics-nginx.rb: Added default hostname of 'localhost'
+- metrics-nginx.rb: Added usage
 
 ## [0.0.6] - 2015-08-04
 ### Changed
