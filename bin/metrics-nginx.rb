@@ -15,7 +15,8 @@
 #   gem: sensu-plugin
 #
 # USAGE:
-#   #YELLOW
+#   metrics-nginx.rb -h hostname -p port -q status_path
+#   metrics-nginx.rb -u http://hostname:port/status_path
 #
 # NOTES:
 #
