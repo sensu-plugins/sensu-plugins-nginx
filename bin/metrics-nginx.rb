@@ -47,7 +47,7 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
          default: 'localhost'
 
   option :port,
-         short: '-P PORT',
+         short: '-p PORT',
          long: '--port PORT',
          description: 'Nginx  port',
          default: '80'
