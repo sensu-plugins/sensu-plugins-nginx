@@ -4,7 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## Unreleased
--nothing
+### Added
+- metrics-nginx.rb: Added default hostname of 'localhost'
 
 ## [0.0.6] - 2015-08-04
 ### Changed
@@ -12,7 +13,6 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [0.0.5] - 2015-07-15
 - bump version due to wrong file name, no code changes
-
 
 ## [0.0.4] - 2015-07-14 **YANKED**
 ### Changed
