@@ -4,9 +4,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## Unreleased
+
+[1.0.0] - 2015-12-03
 ### Added
 - metrics-nginx.rb: Added default hostname of 'localhost'
 - metrics-nginx.rb: Added usage
+
+### Removed
+- Removed nginx-metrics.rb; use metrics-nginx.rb instead
+
+### Changed
+- Update to rubocop 0.32.1
 
 ## [0.0.6] - 2015-08-04
 ### Changed
