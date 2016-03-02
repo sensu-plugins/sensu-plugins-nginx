@@ -1,19 +1,31 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+deploy:
+  provider: rubygems
+  api_key:
+    secure: B4bHANGdiSn7y7hgBAw+fJ4BwQrxtzgzZuKTMK5OU04yhvSwjEAuTl3zQAGGi8bCBZZ3qBxARxYeYicOgbInw9SLhUrr/dMC8iDkOCKFMrfQXDGC9uJuAJ/YwqjQ+uhKYMH5DXjpi7n0lGEWbWYCX/2/0/f01L4/D1QfpA+kvZk=
+  gem: sensu-plugins-nginx
+  on:
+    tags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-nginx
