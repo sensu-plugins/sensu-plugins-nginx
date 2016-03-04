@@ -95,17 +95,17 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
 
     # #YELLOW
     response.body.split(/\r?\n/).each do |line|
-      if line.match(/^Active connections:\s+(\d+)/)
+      if line =~ /^Active connections:\s+(\d+)/
         connections = line.match(/^Active connections:\s+(\d+)/).to_a
         output "#{config[:scheme]}.active_connections", connections[1]
       end
-      if line.match(/^\s+(\d+)\s+(\d+)\s+(\d+)/)
+      if line =~ /^\s+(\d+)\s+(\d+)\s+(\d+)/
         requests = line.match(/^\s+(\d+)\s+(\d+)\s+(\d+)/).to_a
         output "#{config[:scheme]}.accepts", requests[1]
         output "#{config[:scheme]}.handled", requests[2]
         output "#{config[:scheme]}.requests", requests[3]
       end
-      if line.match(/^Reading:\s+(\d+).*Writing:\s+(\d+).*Waiting:\s+(\d+)/)
+      if line =~ /^Reading:\s+(\d+).*Writing:\s+(\d+).*Waiting:\s+(\d+)/
         queue = line.match(/^Reading:\s+(\d+).*Writing:\s+(\d+).*Waiting:\s+(\d+)/).to_a
         output "#{config[:scheme]}.reading", queue[1]
         output "#{config[:scheme]}.writing", queue[2]

@@ -16,16 +16,19 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-nginx.gemspec
+- gem install sensu-plugins-nginx-*.gem
 deploy:
   provider: rubygems
   api_key:
-    secure: B4bHANGdiSn7y7hgBAw+fJ4BwQrxtzgzZuKTMK5OU04yhvSwjEAuTl3zQAGGi8bCBZZ3qBxARxYeYicOgbInw9SLhUrr/dMC8iDkOCKFMrfQXDGC9uJuAJ/YwqjQ+uhKYMH5DXjpi7n0lGEWbWYCX/2/0/f01L4/D1QfpA+kvZk=
+    secure: aYIcQWof/3mOwnJocuJlasvu1i99+UYlhvVjVdlnKTOqzVoWthx0mADPeHZJfr2XOHV+THO7mHtGlc9dQdZ1JSGvMGItShzHp7Y3JLzJHPSy3QSY1A8LmDkF3lMh9UY5Gu6InT4a0gAchz3qv5jjlylFRAl+tTtPXzIhftMjfJs=
   gem: sensu-plugins-nginx
   on:
     tags: true
+    repo: sensu-plugins/sensu-plugins-nginx
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
-    repo: sensu-plugins/sensu-plugins-nginx
+

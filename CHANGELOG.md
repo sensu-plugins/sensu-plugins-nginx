@@ -28,7 +28,6 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 - updated sensu-plugin gem to 1.2.0
 
 ## [0.0.3] - 2015-06-10 **YANKED**
-
 ### Changed
 - changed the name of nginx-metrics.rb to metrics-nginx.rb to conform to std naming
 - nginx-metrics.rb is now depericiated and will be removed in a future release
@@ -46,5 +45,14 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Changed
 - removed cruft from /lib
 
-## [0.0.1] - 2015-02-11 **YANKED**
+## 0.0.1 - 2015-02-11 **YANKED**
 - initial stable release
+
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.6...1.0.0
+[0.0.6]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.5...0.0.6
+[0.0.5]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.4...0.0.5
+[0.0.4]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.3...0.0.4
+[0.0.3]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.2...0.0.3
+[0.0.2]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.1...0.0.2
+
