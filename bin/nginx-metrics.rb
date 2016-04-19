@@ -57,8 +57,8 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
          default: 'nginx_status'
 
   option :hostheader,
-	 long: '--hostheader HOSTHEADER',
-	 description: 'Set the Host header to this string'
+         long: '--hostheader HOSTHEADER',
+         description: 'Set the Host header to this string'
 
   option :scheme,
          description: 'Metric naming scheme, text to prepend to metric',
