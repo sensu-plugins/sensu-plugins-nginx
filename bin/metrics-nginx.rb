@@ -83,9 +83,9 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
           http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         end
         request = Net::HTTP::Get.new(uri.request_uri)
-	if config[:hostheader]
-	  request['Host'] = config[:hostheader]
-	end
+        if config[:hostheader]
+          request['Host'] = config[:hostheader]
+        end
         response = http.request(request)
         if response.code == '200'
           found = true
