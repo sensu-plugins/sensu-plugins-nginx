@@ -6,18 +6,7 @@ require 'rubocop/rake_task'
 require 'yard'
 require 'yard/rake/yardoc_task'
 
-desc 'Don\'t run Rubocop for unsupported versions'
-<<<<<<< b86b730e083da106d1ddebcdae51494b410246f9
-begin
-  args = if RUBY_VERSION >= '2.0.0'
-           [:spec, :make_bin_executable, :yard, :rubocop, :check_binstubs]
-         else
-           [:spec, :make_bin_executable, :yard]
-         end
-end
-=======
 args = [:spec, :make_bin_executable, :yard, :rubocop, :check_binstubs]
->>>>>>> lots of crufty bits
 
 YARD::Rake::YardocTask.new do |t|
   OTHER_PATHS = %w().freeze
