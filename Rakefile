@@ -38,4 +38,3 @@ task :check_binstubs do
 end
 
 task default: args
-Status API Training Shop Blog About
