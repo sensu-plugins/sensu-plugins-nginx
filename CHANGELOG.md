@@ -5,9 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
-## [2.0.0] - 2016-04-26
+## [2.0.0] - 2016-05-24
 ### Changed
 - remove support for rubies < 2.0
+- update to rubocop 0.40 and cleanup
 
 ### Added
 - ability to specify custom host header values
