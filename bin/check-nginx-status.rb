@@ -37,8 +37,10 @@ require 'sensu-plugin/check/cli'
 # Nginx Status Check
 #
 class CheckNginxStatus < Sensu::Plugin::Check::CLI
-
-  option :url, short: '-u URL', long: '--url URL', description: 'Full URL to nginx status page, example: https://yoursite.com/nginx_status This ignores ALL other options'
+  option :url,
+         short: '-u URL',
+         long: '--url URL',
+         description: 'Full URL to nginx status page, example: https://yoursite.com/nginx_status This ignores ALL other options'
 
   option :hostname,
          short: '-h HOSTNAME',
@@ -106,7 +108,7 @@ class CheckNginxStatus < Sensu::Plugin::Check::CLI
         end
         return response
       end
-    rescue Exception => e
+    rescue => e
       unknown "Could not fetch Nginx status | #{e.message}"
     end
   end
