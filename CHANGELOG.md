@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
+## [2.0.1] - 2016-11-29
+### Changed
+- added check-nginx-status plugin
+
 ## [2.0.0] - 2016-05-24
 ### Changed
 - remove support for rubies < 2.0
