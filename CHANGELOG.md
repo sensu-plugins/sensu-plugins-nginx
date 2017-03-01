@@ -5,9 +5,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
-## [2.0.1] - 2016-11-29
-### Changed
-- added check-nginx-status plugin
+## [2.1.0] - 2017-02-28
+### Added
+- add `check-nginx-status` plugin (@hany)
 
 ## [2.0.0] - 2016-05-24
 ### Changed
@@ -60,7 +60,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## 0.0.1 - 2015-02-11 **YANKED**
 - initial stable release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.1.0...HEAD
+[2.1.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.6...1.0.0
 [0.0.6]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.5...0.0.6
