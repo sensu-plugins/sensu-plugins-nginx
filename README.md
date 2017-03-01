@@ -10,13 +10,15 @@
 
 **metrics-nginx**
 
-Fetch the nginx status page and convert the response into graphite metrics
-Check  nginx status
+Fetch the nginx status page and convert the response into metrics
+
+**check-nginx-status**
+
+Check nginx statistics
 
 ## Files
  * bin/metrics-nginx.rb
  * bin/check-nginx-status.rb
-Get the nginx metrics from the status page url for use with Graphite
 
 ## Usage
 
