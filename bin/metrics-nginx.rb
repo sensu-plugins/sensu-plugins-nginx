@@ -66,7 +66,7 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
          description: 'Metric naming scheme, text to prepend to metric',
          short: '-s SCHEME',
          long: '--scheme SCHEME',
-         default: "#{Socket.gethostname}.nginx"
+         default: "#{Socket.gethostbyname(Socket.gethostname).first}.nginx"
 
   # Main function
   #
