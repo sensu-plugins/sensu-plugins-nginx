@@ -61,6 +61,9 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
   option :hostheader,
          long: '--hostheader HOSTHEADER',
          description: 'Set the Host header to this string'
+  option :token,
+         long: '--token token',
+         description: 'JWT Token'
 
   option :scheme,
          description: 'Metric naming scheme, text to prepend to metric',
@@ -85,6 +88,9 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
         request = Net::HTTP::Get.new(uri.request_uri)
         if config[:hostheader]
           request['Host'] = config[:hostheader]
+        end
+        if config[:token]
+          request['Authorization'] = "Bearer #{config[:token]}"
         end
         response = http.request(request)
         if response.code == '200'
