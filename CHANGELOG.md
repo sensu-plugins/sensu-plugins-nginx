@@ -4,7 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
-
+## Added
+- add jwt token support 
 ## [2.1.0] - 2017-02-28
 ### Added
 - add `check-nginx-status` plugin (@hany)
