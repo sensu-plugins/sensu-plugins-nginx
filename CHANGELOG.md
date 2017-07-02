@@ -4,8 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+
+### [2.2.0] - 2017-07-02
 ## Added
-- add jwt token support 
+- add jwt token support
+
 ## [2.1.0] - 2017-02-28
 ### Added
 - add `check-nginx-status` plugin (@hany)
@@ -61,7 +64,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ## 0.0.1 - 2015-02-11 **YANKED**
 - initial stable release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.1.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.0...HEAD
+[2.2.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.1.0...2.2.0
 [2.1.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/0.0.6...1.0.0
