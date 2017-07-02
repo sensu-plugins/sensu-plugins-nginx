@@ -4,10 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+### Added
+- ruby 2.4 testing (@majormoses)
+
+### Fixed
+- typos in PR template (@majormoses)
 
 ### [2.2.0] - 2017-07-02
 ## Added
-- add jwt token support
+- add jwt token support (@Ishahar)
 
 ## [2.1.0] - 2017-02-28
 ### Added
