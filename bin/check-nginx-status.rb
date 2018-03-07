@@ -108,7 +108,7 @@ class CheckNginxStatus < Sensu::Plugin::Check::CLI
         end
         return response
       end
-    rescue => e
+    rescue StandardError => e
       unknown "Could not fetch Nginx status | #{e.message}"
     end
   end
