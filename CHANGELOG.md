@@ -5,6 +5,7 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [Unreleased]
 
+## [2.2.1] - 2018-03-17
 ### Security
 - updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
 
@@ -16,9 +17,6 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ### Added
 - ruby 2.4 testing (@majormoses)
-
-### Fixed
-- typos in PR template (@majormoses)
 
 ### [2.2.0] - 2017-07-02
 ## Added
@@ -79,7 +77,8 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 ## 0.0.1 - 2015-02-11 **YANKED**
 - initial stable release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.1...HEAD
+[2.2.1]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.0...2.2.1
 [2.2.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.1.0...2.2.0
 [2.1.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/1.0.0...2.0.0
