@@ -103,6 +103,7 @@ class CheckNginxStatus < Sensu::Plugin::Check::CLI
         else
           response = Net::HTTP.start(config[:hostname], config[:port]) do |connection|
             request = Net::HTTP::Get.new("/#{config[:path]}")
+            request['Host'] = config[:hostheader] if config[:hostheader]
             connection.request(request)
           end
         end
