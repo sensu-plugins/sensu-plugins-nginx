@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+
+## [2.2.3] - 2018-10-01
 ### Fixed
 - `check-nginx-status.rb`: Fixed usage of hostheader without setting url
 
@@ -83,7 +85,8 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 ## 0.0.1 - 2015-02-11 **YANKED**
 - initial stable release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.2...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.3...HEAD
+[2.2.3]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.2...2.2.3
 [2.2.2]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.1...2.2.2
 [2.2.1]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.0...2.2.1
 [2.2.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.1.0...2.2.0
