@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
 ## [Unreleased]
+
+## [3.0.0] - 2019-09-16
 ### Breaking Changes
 - Bump `sensu-plugin` dependency from `~> 1.2` to `~> 4.0` you can read the changelog entries for [4.0](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#400---2018-02-17), [3.0](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#300---2018-12-04), and [2.0](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#v200---2017-03-29)
 
@@ -91,7 +93,8 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 ## 0.0.1 - 2015-02-11 **YANKED**
 - initial stable release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.3...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.3...3.0.0
 [2.2.3]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.2...2.2.3
 [2.2.2]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.1...2.2.2
 [2.2.1]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.0...2.2.1
