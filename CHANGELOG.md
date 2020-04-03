@@ -7,6 +7,10 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [3.1.0] - 2020-04-03
 ### Changed
+- Fixed travis build
+
+## [3.1.0] - 2020-04-03
+### Changed
 - Updated rubocop rubocop requirement from ~> 0.51.0 to ~> 0.81.0
 - Remediated rubocop warnings
 - Updated bundler requirement from ~> 1.7 to ~> 2.1
@@ -101,7 +105,8 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 ## 0.0.1 - 2015-02-11 **YANKED**
 - initial stable release
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/3.1.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/3.1.1...HEAD
+[3.1.1]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/3.1.0...3.1.1
 [3.1.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/3.0.0...3.1.0
 [3.0.0]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.3...3.0.0
 [2.2.3]: https://github.com/sensu-plugins/sensu-plugins-nginx/compare/2.2.2...2.2.3
