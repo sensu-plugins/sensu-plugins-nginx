@@ -5,6 +5,7 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [Unreleased]
 
+## [3.1.2] - 2020-04-03
 ### Changed
 - Removed bare centos build from bonsai definition
 
