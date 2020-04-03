@@ -30,7 +30,7 @@ deploy:
     rvm: 2.3.0
     rvm: 2.4.1
 - provider: script
-  script: bonsai/ruby-runtime/travis-build-ruby-plugin-assets.sh sensu-plugins-uptime-nginx
+  script: bonsai/ruby-runtime/travis-build-ruby-plugin-assets.sh sensu-plugins-nginx
   skip_cleanup: true
   on:
     tags: true
