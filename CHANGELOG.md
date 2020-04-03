@@ -5,6 +5,13 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [Unreleased]
 
+### Changed
+- Updated rubocop rubocop requirement from ~> 0.51.0 to ~> 0.81.0
+- Remediated rubocop warnings
+- Updated bundler requirement from ~> 1.7 to ~> 2.1
+- Updated rake requirement from ~> 10.0 to ~> 13.0
+- Updated codeclimate-test-reporter requirement from ~> 0.4 to ~> 1.0
+
 ## [3.0.0] - 2019-09-16
 ### Breaking Changes
 - Bump `sensu-plugin` dependency from `~> 1.2` to `~> 4.0` you can read the changelog entries for [4.0](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#400---2018-02-17), [3.0](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#300---2018-12-04), and [2.0](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#v200---2017-03-29)
