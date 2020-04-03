@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.metadata               = { 'maintainer' => '@mattyjones',
                                'development_status' => 'active',
                                'production_status' => 'unstable - testing recommended',
-                               'release_draft'  => 'false',
+                               'release_draft' => 'false',
                                'release_prerelease' => 'false' }
   s.name                   = 'sensu-plugins-nginx'
   s.platform               = Gem::Platform::RUBY
