@@ -95,16 +95,16 @@ class NginxMetrics < Sensu::Plugin::Metric::CLI::Graphite
           request['Authorization'] = "Bearer #{config[:token]}"
         end
         response = http.request(request)
-        if response.code == '200'
-          found = true
-        elsif !response.header['location'].nil?
-          config[:url] = response.header['location']
-        end
       else
         response = Net::HTTP.start(config[:hostname], config[:port]) do |connection|
           request = Net::HTTP::Get.new("/#{config[:path]}")
           connection.request(request)
         end
+      end
+      if response.code == '200'
+        found = true
+      elsif !response.header['location'].nil?
+        config[:url] = response.header['location']
       end
     end
 
